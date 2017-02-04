@@ -20,9 +20,9 @@ class LiveNewsInterector: PresentorToInterectorProtocol{
             print(response.data)     // server data
             print(response.result)   // result of response serialization
             
-            if let JSON = response.result.value {
-                print("JSON: \(JSON)")
-                self.presenter?.liveNewsFetched(news: JSON as! String);
+            if let json = response.result.value {
+                print("JSON: \(json)")
+                self.presenter?.liveNewsFetched(news: "\(json)" as! String);
             }
         }
     }

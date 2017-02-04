@@ -12,6 +12,7 @@ class LiveNewsPresenter: ViewToPresenterProtocol, InterectorToPresenterProtocol{
     
     var view: PresenterToViewProtocol?;
     var interector: PresentorToInterectorProtocol?;
+    var router: PresenterToRouterProtocol?
     
     func updateView() {
         interector?.fetchLiveNews();

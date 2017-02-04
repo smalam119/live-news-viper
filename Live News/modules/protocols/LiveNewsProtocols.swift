@@ -24,8 +24,9 @@ protocol PresentorToInterectorProtocol: class{
 }
 
 protocol ViewToPresenterProtocol: class{
-    //var view: PresenterToViewProtocol? {get set};
-    //var interector: PresentorToInterectorProtocol? {get set};
+    var view: PresenterToViewProtocol? {get set};
+    var interector: PresentorToInterectorProtocol? {get set};
+    var router: PresenterToRouterProtocol? {get set}
     func updateView();
 }
 
