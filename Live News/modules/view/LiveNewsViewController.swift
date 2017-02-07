@@ -13,22 +13,16 @@ class LiveNewsViewController: UIViewController, PresenterToViewProtocol {
 
     var presenter: ViewToPresenterProtocol?
     
+    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UITextView!
+    
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
     }
     
-    @IBOutlet weak var newsViewBox: UITextView!
-    
     override func viewDidLoad() {
         super.viewDidLoad();
-        
-//        if let unwrappedPresenter = presenter {
-//            print("presenter not nil");
-//            unwrappedPresenter.updateView();
-//        } else {
-//            print("presenter nil");
-//        }
-        
         presenter?.updateView();
         
     }
@@ -37,12 +31,16 @@ class LiveNewsViewController: UIViewController, PresenterToViewProtocol {
         super.didReceiveMemoryWarning();
     }
     
-    func showNewsHeadLine(news: String) {
-        newsViewBox.text = news;
-        print(news);
+    func showNews(news: LiveNewsModel) {
+        authorLabel.text = news.author;
+        titleLabel.text = news.title;
+        descriptionLabel.text = news.description;
     }
     
     func showError() {
+        let alert = UIAlertController(title: "Alert", message: "Problem Fetching News", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 
 }

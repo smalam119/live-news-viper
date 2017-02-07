@@ -35,7 +35,7 @@
 		8043F7621E3C6FA9009BA6E1 /* LiveNewsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiveNewsPresenter.swift; path = modules/presenter/LiveNewsPresenter.swift; sourceTree = "<group>"; };
 		8043F7681E3C71A1009BA6E1 /* LiveNewsInterector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiveNewsInterector.swift; path = modules/interector/LiveNewsInterector.swift; sourceTree = "<group>"; };
 		8043F76C1E3C7447009BA6E1 /* LiveNewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiveNewsModel.swift; path = modules/entity/LiveNewsModel.swift; sourceTree = "<group>"; };
-		8043F7701E3C78FB009BA6E1 /* PodFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
+		8043F7701E3C78FB009BA6E1 /* PodFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8043F7721E3C909B009BA6E1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		80CD31C91E4503FB00DFEA17 /* LiveNewsProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiveNewsProtocols.swift; path = modules/protocols/LiveNewsProtocols.swift; sourceTree = "<group>"; };
 		80D8038C1E45CE230014487D /* LiveNewsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveNewsRouter.swift; sourceTree = "<group>"; };

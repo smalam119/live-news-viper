@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import ObjectMapper
 
 class LiveNewsInterector: PresentorToInterectorProtocol{
 
@@ -15,14 +16,16 @@ class LiveNewsInterector: PresentorToInterectorProtocol{
     
     func fetchLiveNews() {
         Alamofire.request(Constants.URL).responseJSON { response in
-            print(response.request)  // original URL request
-            print(response.response) // HTTP URL response
-            print(response.data)     // server data
-            print(response.result)   // result of response serialization
             
-            if let json = response.result.value {
-                print("JSON: \(json)")
-                self.presenter?.liveNewsFetched(news: "\(json)" as! String);
+            if(response.response?.statusCode == 200){
+                if let json = response.result.value as! AnyObject? {
+                    let arrayResponse = json["articles"] as! NSArray
+                    let arrayObject = Mapper<LiveNewsModel>().mapArray(JSONArray: arrayResponse as! [[String : Any]]);
+                    self.presenter?.liveNewsFetched(news: (arrayObject?[0])!);
+                }
+            }
+            else {
+                self.presenter?.liveNewsFetchedFailed();
             }
         }
     }

@@ -18,8 +18,12 @@ class LiveNewsPresenter: ViewToPresenterProtocol, InterectorToPresenterProtocol{
         interector?.fetchLiveNews();
     }
     
-    func liveNewsFetched(news: String) {
-        view?.showNewsHeadLine(news: news);
+    func liveNewsFetched(news: LiveNewsModel) {
+        view?.showNews(news: news);
+    }
+    
+    func liveNewsFetchedFailed(){
+        view?.showError()
     }
 }
 
