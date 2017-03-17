@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class LiveNewsViewController: UIViewController, PresenterToViewProtocol {
+class LiveNewsViewController: UIViewController {
 
     var presenter: ViewToPresenterProtocol?
     
@@ -30,8 +30,11 @@ class LiveNewsViewController: UIViewController, PresenterToViewProtocol {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning();
     }
-    
-    func showNews(news: LiveNewsModel) {
+}
+
+extension LiveNewsViewController: PresenterToViewProtocol {
+
+	func showNews(news: LiveNewsModel) {
         authorLabel.text = news.author;
         titleLabel.text = news.title;
         descriptionLabel.text = news.description;
@@ -42,5 +45,4 @@ class LiveNewsViewController: UIViewController, PresenterToViewProtocol {
         alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
-
 }

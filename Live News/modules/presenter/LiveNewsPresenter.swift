@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LiveNewsPresenter: ViewToPresenterProtocol, InterectorToPresenterProtocol{
+class LiveNewsPresenter: ViewToPresenterProtocol {
     
     var view: PresenterToViewProtocol?;
     var interector: PresentorToInterectorProtocol?;
@@ -17,8 +17,11 @@ class LiveNewsPresenter: ViewToPresenterProtocol, InterectorToPresenterProtocol{
     func updateView() {
         interector?.fetchLiveNews();
     }
-    
-    func liveNewsFetched(news: LiveNewsModel) {
+}
+
+extension LiveNewsPresenter: InterectorToPresenterProtocol {
+	
+	func liveNewsFetched(news: LiveNewsModel) {
         view?.showNews(news: news);
     }
     
