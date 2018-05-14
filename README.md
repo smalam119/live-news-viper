@@ -1,6 +1,6 @@
 # live-news-viper
 
-A simple RESTful news headline fetching project to demonstrate VIPER design pattern. Alamofire and Object Mpper is used for networking.
+A simple RESTful news headline fetching project to demonstrate VIPER design pattern. Alamofire and Object Mapper is used for networking.
 See the presentation on [Medium](https://medium.com/@smalam119)
 
 
