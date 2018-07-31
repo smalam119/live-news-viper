@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8043F7461E3C679C009BA6E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043F7451E3C679C009BA6E1 /* AppDelegate.swift */; };
-		8043F7481E3C679C009BA6E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043F7471E3C679C009BA6E1 /* ViewController.swift */; };
 		8043F74B1E3C679C009BA6E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8043F7491E3C679C009BA6E1 /* Main.storyboard */; };
 		8043F74D1E3C679C009BA6E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8043F74C1E3C679C009BA6E1 /* Assets.xcassets */; };
 		8043F7501E3C679C009BA6E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8043F74E1E3C679C009BA6E1 /* LaunchScreen.storyboard */; };
@@ -25,7 +24,6 @@
 /* Begin PBXFileReference section */
 		8043F7421E3C679C009BA6E1 /* Live News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Live News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8043F7451E3C679C009BA6E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8043F7471E3C679C009BA6E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8043F74A1E3C679C009BA6E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8043F74C1E3C679C009BA6E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8043F74F1E3C679C009BA6E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 			children = (
 				8043F7571E3C68A4009BA6E1 /* modules */,
 				8043F7451E3C679C009BA6E1 /* AppDelegate.swift */,
-				8043F7471E3C679C009BA6E1 /* ViewController.swift */,
 				8043F7491E3C679C009BA6E1 /* Main.storyboard */,
 				8043F74C1E3C679C009BA6E1 /* Assets.xcassets */,
 				8043F74E1E3C679C009BA6E1 /* LaunchScreen.storyboard */,
@@ -287,7 +284,6 @@
 				80CD31CA1E4503FC00DFEA17 /* LiveNewsProtocols.swift in Sources */,
 				8043F7731E3C909B009BA6E1 /* Constants.swift in Sources */,
 				8043F75E1E3C6A4A009BA6E1 /* LiveNewsViewController.swift in Sources */,
-				8043F7481E3C679C009BA6E1 /* ViewController.swift in Sources */,
 				8043F7631E3C6FA9009BA6E1 /* LiveNewsPresenter.swift in Sources */,
 				8F4037CC21104DB1008AC7E8 /* LiveNewsRouter.swift in Sources */,
 				8043F76D1E3C7447009BA6E1 /* LiveNewsModel.swift in Sources */,
