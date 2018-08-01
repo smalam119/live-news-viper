@@ -18,7 +18,7 @@
 		8043F7731E3C909B009BA6E1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043F7721E3C909B009BA6E1 /* Constants.swift */; };
 		80CD31CA1E4503FC00DFEA17 /* LiveNewsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CD31C91E4503FB00DFEA17 /* LiveNewsProtocols.swift */; };
 		8EF7789E23A8EF9C1847DE46 /* Pods_Live_News.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983BF5BF882D13713EB064C5 /* Pods_Live_News.framework */; };
-		8F4037CC21104DB1008AC7E8 /* LiveNewsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4037CB21104DB1008AC7E8 /* LiveNewsRouter.swift */; };
+		BD07EE5C2111A88900950254 /* LiveNewsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD07EE5B2111A88900950254 /* LiveNewsRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +34,9 @@
 		8043F76C1E3C7447009BA6E1 /* LiveNewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiveNewsModel.swift; path = modules/entity/LiveNewsModel.swift; sourceTree = "<group>"; };
 		8043F7721E3C909B009BA6E1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		80CD31C91E4503FB00DFEA17 /* LiveNewsProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiveNewsProtocols.swift; path = modules/protocols/LiveNewsProtocols.swift; sourceTree = "<group>"; };
-		8F4037CB21104DB1008AC7E8 /* LiveNewsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveNewsRouter.swift; sourceTree = "<group>"; };
 		983BF5BF882D13713EB064C5 /* Pods_Live_News.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Live_News.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23CFDB29DEAF97B3F73DFBD /* Pods-Live News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Live News.release.xcconfig"; path = "Pods/Target Support Files/Pods-Live News/Pods-Live News.release.xcconfig"; sourceTree = "<group>"; };
+		BD07EE5B2111A88900950254 /* LiveNewsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiveNewsRouter.swift; path = modules/route/LiveNewsRouter.swift; sourceTree = "<group>"; };
 		C456990C6F6128618D084D05 /* Pods-Live News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Live News.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Live News/Pods-Live News.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,7 +149,7 @@
 		8043F75C1E3C6918009BA6E1 /* route */ = {
 			isa = PBXGroup;
 			children = (
-				8F4037CB21104DB1008AC7E8 /* LiveNewsRouter.swift */,
+				BD07EE5B2111A88900950254 /* LiveNewsRouter.swift */,
 			);
 			name = route;
 			sourceTree = "<group>";
@@ -285,8 +285,8 @@
 				8043F7731E3C909B009BA6E1 /* Constants.swift in Sources */,
 				8043F75E1E3C6A4A009BA6E1 /* LiveNewsViewController.swift in Sources */,
 				8043F7631E3C6FA9009BA6E1 /* LiveNewsPresenter.swift in Sources */,
-				8F4037CC21104DB1008AC7E8 /* LiveNewsRouter.swift in Sources */,
 				8043F76D1E3C7447009BA6E1 /* LiveNewsModel.swift in Sources */,
+				BD07EE5C2111A88900950254 /* LiveNewsRouter.swift in Sources */,
 				8043F7461E3C679C009BA6E1 /* AppDelegate.swift in Sources */,
 				8043F7691E3C71A1009BA6E1 /* LiveNewsInterector.swift in Sources */,
 			);
