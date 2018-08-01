@@ -1,9 +1,0 @@
-platform :ios, '10.0'
-use_frameworks!
-
-
-target 'Live News' do
-pod 'Alamofire', '~> 4.0'
-pod 'AlamofireObjectMapper', '~> 4.0'
-pod 'NVActivityIndicatorView'
-end

@@ -9,28 +9,28 @@
 import Foundation
 import UIKit
 
-protocol PresenterToViewProtocol: class{
+protocol PresenterToViewProtocol: class {
     func showNews(news: LiveNewsModel);
     func showError();
 }
 
-protocol InterectorToPresenterProtocol: class{
+protocol InterectorToPresenterProtocol: class {
     func liveNewsFetched(news: LiveNewsModel);
     func liveNewsFetchedFailed();
 }
 
-protocol PresentorToInterectorProtocol: class{
+protocol PresentorToInterectorProtocol: class {
     var presenter: InterectorToPresenterProtocol? {get set} ;
     func fetchLiveNews();
 }
 
-protocol ViewToPresenterProtocol: class{
+protocol ViewToPresenterProtocol: class {
     var view: PresenterToViewProtocol? {get set};
     var interector: PresentorToInterectorProtocol? {get set};
     var router: PresenterToRouterProtocol? {get set}
     func updateView();
 }
 
-protocol PresenterToRouterProtocol: class{
+protocol PresenterToRouterProtocol: class {
     static func createModule() -> UIViewController;
 }
