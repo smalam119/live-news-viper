@@ -11,15 +11,15 @@ import Foundation
 class LiveNewsPresenter: ViewToPresenterProtocol {
     
     var view: PresenterToViewProtocol?;
-    var interector: PresentorToInterectorProtocol?;
+    var interactor: PresentorToInteractorProtocol?;
     var router: PresenterToRouterProtocol?
     
     func updateView() {
-        interector?.fetchLiveNews();
+        interactor?.fetchLiveNews();
     }
 }
 
-extension LiveNewsPresenter: InterectorToPresenterProtocol {
+extension LiveNewsPresenter: InteractorToPresenterProtocol {
 	
 	func liveNewsFetched(news: LiveNewsModel) {
         view?.showNews(news: news);

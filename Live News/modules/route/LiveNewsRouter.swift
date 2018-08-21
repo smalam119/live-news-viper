@@ -14,14 +14,14 @@ class LiveNewsRouter: PresenterToRouterProtocol{
     class func createModule() ->UIViewController{
         let view = mainstoryboard.instantiateViewController(withIdentifier: "LiveNewsViewController") as? LiveNewsViewController;
         //if let view = navController.childViewControllers.first as? LiveNewsViewController {
-            let presenter: ViewToPresenterProtocol & InterectorToPresenterProtocol = LiveNewsPresenter();
-            let interactor: PresentorToInterectorProtocol = LiveNewsInterector();
+            let presenter: ViewToPresenterProtocol & InteractorToPresenterProtocol = LiveNewsPresenter();
+            let interactor: PresentorToInteractorProtocol = LiveNewsInteractor();
             let router: PresenterToRouterProtocol = LiveNewsRouter();
             
             view?.presenter = presenter;
             presenter.view = view;
             presenter.router = router;
-            presenter.interector = interactor;
+            presenter.interactor = interactor;
             interactor.presenter = presenter;
             
             return view!;
