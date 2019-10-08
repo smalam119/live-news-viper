@@ -157,7 +157,7 @@ public final class NVActivityIndicatorPresenter {
         activityLabel.frame.size = NSString(string: message).boundingRect(
             with: CGSize(width: screenSize.width - 16.0, height: CGFloat.greatestFiniteMagnitude),
             options: .usesLineFragmentOrigin,
-            attributes: [NSFontAttributeName: activityLabel.font],
+            attributes: [NSAttributedString.Key.font: activityLabel.font!],
             context: nil).size
         
         activityLabel.center = CGPoint(

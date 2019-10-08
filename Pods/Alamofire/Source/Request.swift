@@ -102,7 +102,7 @@ open class Request {
     open var task: URLSessionTask? { return delegate.task }
 
     /// The session belonging to the underlying task.
-    open let session: URLSession
+    public let session: URLSession
 
     /// The request sent or to be sent to the server.
     open var request: URLRequest? { return task?.originalRequest }
@@ -184,7 +184,7 @@ open class Request {
     /// - parameter password: The password.
     ///
     /// - returns: A tuple with Authorization header and credential value if encoding succeeds, `nil` otherwise.
-    open static func authorizationHeader(user: String, password: String) -> (key: String, value: String)? {
+    public static func authorizationHeader(user: String, password: String) -> (key: String, value: String)? {
         guard let data = "\(user):\(password)".data(using: .utf8) else { return nil }
 
         let credential = data.base64EncodedString(options: [])
@@ -308,7 +308,7 @@ extension Request: CustomDebugStringConvertible {
                 let cookies = cookieStorage.cookies(for: url), !cookies.isEmpty
             {
                 let string = cookies.reduce("") { $0 + "\($1.name)=\($1.value);" }
-                components.append("-b \"\(string.substring(to: string.characters.index(before: string.endIndex)))\"")
+                components.append("-b \"\(string.substring(to: string.index(before: string.endIndex)))\"")
             }
         }
 
