@@ -1,5 +1,5 @@
 //
-//  LiveNewsInterector.swift
+//  LiveNewsInteractor.swift
 //  Live News
 //
 //  Created by MacBook Pro 13" on 1/28/17.
@@ -10,9 +10,9 @@ import Foundation
 import Alamofire
 import ObjectMapper
 
-class LiveNewsInterector: PresentorToInterectorProtocol{
+class LiveNewsInteractor: PresentorToInteractorProtocol{
 
-    var presenter: InterectorToPresenterProtocol?;
+    var presenter: InteractorToPresenterProtocol?;
     
     func fetchLiveNews() {
         Alamofire.request(Constants.URL).responseJSON { response in

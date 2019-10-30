@@ -14,19 +14,19 @@ protocol PresenterToViewProtocol: class {
     func showError();
 }
 
-protocol InterectorToPresenterProtocol: class {
+protocol InteractorToPresenterProtocol: class {
     func liveNewsFetched(news: LiveNewsModel);
     func liveNewsFetchedFailed();
 }
 
-protocol PresentorToInterectorProtocol: class {
-    var presenter: InterectorToPresenterProtocol? {get set} ;
+protocol PresentorToInteractorProtocol: class {
+    var presenter: InteractorToPresenterProtocol? {get set} ;
     func fetchLiveNews();
 }
 
 protocol ViewToPresenterProtocol: class {
     var view: PresenterToViewProtocol? {get set};
-    var interector: PresentorToInterectorProtocol? {get set};
+    var interactor: PresentorToInteractorProtocol? {get set};
     var router: PresenterToRouterProtocol? {get set}
     func updateView();
 }
