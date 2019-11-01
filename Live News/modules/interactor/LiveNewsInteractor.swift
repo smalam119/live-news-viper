@@ -21,7 +21,7 @@ class LiveNewsInteractor: PresentorToInteractorProtocol{
                 if let json = response.result.value as! AnyObject? {
                     let arrayResponse = json["articles"] as! NSArray
                     let arrayObject = Mapper<LiveNewsModel>().mapArray(JSONArray: arrayResponse as! [[String : Any]]);
-                    self.presenter?.liveNewsFetched(news: (arrayObject?[0])!);
+                    self.presenter?.liveNewsFetched(news: (arrayObject[0]));
                 }
             }
             else {
