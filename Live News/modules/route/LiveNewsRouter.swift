@@ -12,17 +12,17 @@ import UIKit
 class LiveNewsRouter: PresenterToRouterProtocol{
     
     class func createModule() ->UIViewController{
-        let view = mainstoryboard.instantiateViewController(withIdentifier: "LiveNewsViewController") as? LiveNewsViewController;
+        let view = mainstoryboard.instantiateViewController(withIdentifier: "LiveNewsViewController") as? LiveNewsViewController
         //if let view = navController.childViewControllers.first as? LiveNewsViewController {
-            let presenter: ViewToPresenterProtocol & InteractorToPresenterProtocol = LiveNewsPresenter();
-            let interactor: PresentorToInteractorProtocol = LiveNewsInteractor();
-            let router: PresenterToRouterProtocol = LiveNewsRouter();
+            let presenter: ViewToPresenterProtocol & InteractorToPresenterProtocol = LiveNewsPresenter()
+            let interactor: PresentorToInteractorProtocol = LiveNewsInteractor()
+            let router: PresenterToRouterProtocol = LiveNewsRouter()
             
-            view?.presenter = presenter;
-            presenter.view = view;
-            presenter.router = router;
-            presenter.interactor = interactor;
-            interactor.presenter = presenter;
+            view?.presenter = presenter
+            presenter.view = view
+            presenter.router = router
+            presenter.interactor = interactor
+            interactor.presenter = presenter
             
             return view!;
             

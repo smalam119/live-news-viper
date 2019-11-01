@@ -22,22 +22,22 @@ class LiveNewsViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad();
-        presenter?.updateView();
+        super.viewDidLoad()
+        presenter?.updateView()
         
     }
 
     override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning();
+        super.didReceiveMemoryWarning()
     }
 }
 
 extension LiveNewsViewController: PresenterToViewProtocol {
 
 	func showNews(news: LiveNewsModel) {
-        authorLabel.text = news.author;
-        titleLabel.text = news.title;
-        descriptionLabel.text = news.description;
+        authorLabel.text = news.author
+        titleLabel.text = news.title
+        descriptionLabel.text = news.description
     }
     
     func showError() {
