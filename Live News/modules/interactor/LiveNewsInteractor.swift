@@ -18,9 +18,9 @@ class LiveNewsInteractor: PresentorToInteractorProtocol{
         Alamofire.request(Constants.URL).responseJSON { response in
             
             if(response.response?.statusCode == 200){
-                if let json = response.result.value as! AnyObject? {
-                    let arrayResponse = json["articles"] as! NSArray
-                    let arrayObject = Mapper<LiveNewsModel>().mapArray(JSONArray: arrayResponse as! [[String : Any]])
+                if let json = response.result.value as AnyObject? {
+                    let arrayResponse = json["articles"] as? NSArray
+                    let arrayObject = Mapper<LiveNewsModel>().mapArray(JSONArray: (arrayResponse as? [[String : Any]])!)
                     self.presenter?.liveNewsFetched(news: (arrayObject[0]))
                 }
             }
