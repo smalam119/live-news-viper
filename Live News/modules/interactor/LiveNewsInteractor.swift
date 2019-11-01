@@ -15,13 +15,18 @@ class LiveNewsInteractor: PresentorToInteractorProtocol{
     var presenter: InteractorToPresenterProtocol?
     
     func fetchLiveNews() {
-        Alamofire.request(Constants.URL).responseJSON { response in
-            
+        Alamofire.request(Constants.URL).response { response in
             if(response.response?.statusCode == 200){
-                if let json = response.result.value as AnyObject? {
-                    let arrayResponse = json["articles"] as? NSArray
-                    let arrayObject = Mapper<LiveNewsModel>().mapArray(JSONArray: (arrayResponse as? [[String : Any]])!)
-                    self.presenter?.liveNewsFetched(news: (arrayObject[0]))
+                guard let data = response.data else { return }
+                do {
+                    let decoder = JSONDecoder()
+                    let newsResponse = try decoder.decode(NewsResponse.self, from: data)
+                    guard let firstArticle = newsResponse.articles?[0] else {
+                        return
+                    }
+                    self.presenter?.liveNewsFetched(news: firstArticle)
+                } catch let error {
+                    print(error)
                 }
             }
             else {
