@@ -7,9 +7,6 @@ use_frameworks!
 target 'Live News' do
 
     pod 'Alamofire'
-    pod 'AlamofireObjectMapper'
-    pod 'NVActivityIndicatorView'
-    pod 'ObjectMapper'
     
 end
 
