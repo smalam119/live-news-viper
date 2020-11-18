@@ -20,14 +20,14 @@ protocol InteractorToPresenterProtocol: class {
 }
 
 protocol PresentorToInteractorProtocol: class {
-    var presenter: InteractorToPresenterProtocol? {get set}
+    var presenter: InteractorToPresenterProtocol? { get set }
     func fetchLiveNews()
 }
 
 protocol ViewToPresenterProtocol: class {
-    var view: PresenterToViewProtocol? {get set}
-    var interactor: PresentorToInteractorProtocol? {get set}
-    var router: PresenterToRouterProtocol? {get set}
+    var view: PresenterToViewProtocol? { get set }
+    var interactor: PresentorToInteractorProtocol? { get set }
+    var router: PresenterToRouterProtocol? { get set }
     func updateView()
 }
 

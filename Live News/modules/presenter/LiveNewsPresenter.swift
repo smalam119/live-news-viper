@@ -25,7 +25,7 @@ extension LiveNewsPresenter: InteractorToPresenterProtocol {
         view?.showNews(news: news)
     }
     
-    func liveNewsFetchedFailed(){
+    func liveNewsFetchedFailed() {
         view?.showError()
     }
 }

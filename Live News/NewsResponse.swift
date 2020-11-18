@@ -13,13 +13,6 @@ struct NewsResponse: Codable {
     let source: String?
     let sortBy: String?
     let articles: [LiveNewsModel]?
-    
-    enum CodingKeys: String, CodingKey {
-        case status
-        case source
-        case sortBy
-        case articles
-    }
 }
 
 

@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-class LiveNewsInteractor: PresentorToInteractorProtocol{
+class LiveNewsInteractor: PresentorToInteractorProtocol {
 
     var presenter: InteractorToPresenterProtocol?
     
