@@ -10,7 +10,7 @@ import Foundation
 
 class LiveNewsPresenter: ViewToPresenterProtocol {
     
-    var view: PresenterToViewProtocol?
+    weak var view: PresenterToViewProtocol?
     var interactor: PresentorToInteractorProtocol?
     var router: PresenterToRouterProtocol?
     

@@ -11,7 +11,7 @@ import Alamofire
 
 class LiveNewsInteractor: PresentorToInteractorProtocol {
 
-    var presenter: InteractorToPresenterProtocol?
+    weak var presenter: InteractorToPresenterProtocol?
     
     func fetchLiveNews() {
         Alamofire.request(Constants.URL).response { response in
