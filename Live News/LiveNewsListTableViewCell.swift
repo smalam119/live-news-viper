@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LiveNewsTableViewCell: UITableViewCell {
+class LiveNewsListTableViewCell: UITableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!

@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LiveNewsViewController" customModule="Live_News" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LiveNewsListViewController" customModule="Live_News" customModuleProvider="target">
             <connections>
                 <outlet property="tableView" destination="wb9-QN-cwR" id="v4Y-h6-gSZ"/>
                 <outlet property="view" destination="gSM-5W-Ih1" id="o0C-sn-Pfz"/>

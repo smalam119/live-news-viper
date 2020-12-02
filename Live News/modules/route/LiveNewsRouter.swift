@@ -9,14 +9,14 @@
 import Foundation
 import UIKit
 
-class LiveNewsRouter: PresenterToRouterProtocol{
+class LiveNewsRouter: LiveNewsListPresenterToRouterProtocol{
     
     class func createModule() -> UIViewController {
         
-        let view = LiveNewsViewController()
-        let presenter: ViewToPresenterProtocol & InteractorToPresenterProtocol = LiveNewsPresenter()
-        let interactor: PresentorToInteractorProtocol = LiveNewsInteractor()
-        let router: PresenterToRouterProtocol = LiveNewsRouter()
+        let view = LiveNewsListViewController()
+        let presenter: LiveNewsListViewToPresenterProtocol & LiveNewsListInteractorToPresenterProtocol = LiveNewsPresenter()
+        let interactor: LiveNewsListPresentorToInteractorProtocol = LiveNewsInteractor()
+        let router: LiveNewsListPresenterToRouterProtocol = LiveNewsRouter()
         
         view.presenter = presenter
         presenter.view = view

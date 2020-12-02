@@ -9,11 +9,11 @@
 import UIKit
 import Alamofire
 
-class LiveNewsViewController: UIViewController {
+class LiveNewsListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var presenter: ViewToPresenterProtocol?
+    var presenter: LiveNewsListViewToPresenterProtocol?
     var news = [LiveNewsModel]()
     
     override func viewDidLoad() {
@@ -34,13 +34,13 @@ class LiveNewsViewController: UIViewController {
     }
 }
 
-extension LiveNewsViewController: UITableViewDataSource {
+extension LiveNewsListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return news.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "LiveNewsTableViewCell", for: indexPath) as? LiveNewsTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LiveNewsTableViewCell", for: indexPath) as? LiveNewsListTableViewCell
         let row = indexPath.row
         let news = self.news[row]
         guard let title = news.title, let author = news.author, let description = news.description else {
@@ -51,10 +51,10 @@ extension LiveNewsViewController: UITableViewDataSource {
     }
 }
 
-extension LiveNewsViewController: UITableViewDelegate {
+extension LiveNewsListViewController: UITableViewDelegate {
 }
 
-extension LiveNewsViewController: PresenterToViewProtocol {
+extension LiveNewsListViewController: LiveNewsListPresenterToViewProtocol {
 
 	func showNews(news: [LiveNewsModel]) {
         self.news = news

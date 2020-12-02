@@ -8,18 +8,18 @@
 
 import Foundation
 
-class LiveNewsPresenter: ViewToPresenterProtocol {
+class LiveNewsPresenter: LiveNewsListViewToPresenterProtocol {
     
-    weak var view: PresenterToViewProtocol?
-    var interactor: PresentorToInteractorProtocol?
-    var router: PresenterToRouterProtocol?
+    weak var view: LiveNewsListPresenterToViewProtocol?
+    var interactor: LiveNewsListPresentorToInteractorProtocol?
+    var router: LiveNewsListPresenterToRouterProtocol?
     
     func updateView() {
         interactor?.fetchLiveNews()
     }
 }
 
-extension LiveNewsPresenter: InteractorToPresenterProtocol {
+extension LiveNewsPresenter: LiveNewsListInteractorToPresenterProtocol {
 	
 	func liveNewsFetched(news: [LiveNewsModel]) {
         view?.showNews(news: news)

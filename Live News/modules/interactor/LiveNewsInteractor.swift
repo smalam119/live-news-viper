@@ -9,9 +9,9 @@
 import Foundation
 import Alamofire
 
-class LiveNewsInteractor: PresentorToInteractorProtocol {
+class LiveNewsInteractor: LiveNewsListPresentorToInteractorProtocol {
 
-    weak var presenter: InteractorToPresenterProtocol?
+    weak var presenter: LiveNewsListInteractorToPresenterProtocol?
     
     func fetchLiveNews() {
         Alamofire.request(Constants.URL).response { response in
