@@ -11,10 +11,14 @@ import Alamofire
 
 class LiveNewsListViewController: UIViewController {
 
+    // MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
     
+    // MARK: - Properties
     var presenter: LiveNewsListViewToPresenterProtocol?
     var news = [LiveNewsModel]()
+    
+    // MARK: - Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +37,7 @@ class LiveNewsListViewController: UIViewController {
         tableView.register(UINib(nibName: "LiveNewsTableViewCell", bundle: .main), forCellReuseIdentifier: "LiveNewsTableViewCell")
     }
 }
-
+// MARK: - UITableViewDataSource
 extension LiveNewsListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return news.count
@@ -51,9 +55,10 @@ extension LiveNewsListViewController: UITableViewDataSource {
     }
 }
 
-extension LiveNewsListViewController: UITableViewDelegate {
-}
+// MARK: - UITableViewDelegate
+extension LiveNewsListViewController: UITableViewDelegate {}
 
+// MARK: - LiveNewsListPresenterToViewProtocol
 extension LiveNewsListViewController: LiveNewsListPresenterToViewProtocol {
 
 	func showNews(news: [LiveNewsModel]) {

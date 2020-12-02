@@ -10,15 +10,18 @@ import Foundation
 
 class LiveNewsPresenter: LiveNewsListViewToPresenterProtocol {
     
+    // MARK: - Properties
     weak var view: LiveNewsListPresenterToViewProtocol?
     var interactor: LiveNewsListPresentorToInteractorProtocol?
     var router: LiveNewsListPresenterToRouterProtocol?
     
+    // MARK: - Methods
     func updateView() {
         interactor?.fetchLiveNews()
     }
 }
 
+// MARK: - LiveNewsListInteractorToPresenterProtocol
 extension LiveNewsPresenter: LiveNewsListInteractorToPresenterProtocol {
 	
 	func liveNewsFetched(news: [LiveNewsModel]) {

@@ -11,6 +11,8 @@ import UIKit
 
 class LiveNewsRouter: LiveNewsListPresenterToRouterProtocol{
     
+    // MARK: - Methods
+    
     class func createModule() -> UIViewController {
         
         let view = LiveNewsListViewController()
