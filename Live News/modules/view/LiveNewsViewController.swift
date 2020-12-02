@@ -11,33 +11,54 @@ import Alamofire
 
 class LiveNewsViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     var presenter: ViewToPresenterProtocol?
-    
-    @IBOutlet weak var authorLabel: UILabel!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UITextView!
-    
-    required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)!
-    }
+    var news = [LiveNewsModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setUpTableView()
+        
         presenter?.updateView()
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    
+    private func setUpTableView() {
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.tableFooterView = UIView()
+        
+        tableView.register(UINib(nibName: "LiveNewsTableViewCell", bundle: .main), forCellReuseIdentifier: "LiveNewsTableViewCell")
     }
+}
+
+extension LiveNewsViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return news.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LiveNewsTableViewCell", for: indexPath) as? LiveNewsTableViewCell
+        let row = indexPath.row
+        let news = self.news[row]
+        guard let title = news.title, let author = news.author, let description = news.description else {
+            return cell ?? UITableViewCell()
+        }
+        cell?.setCell(title: title, author: author, description: description)
+        return cell ?? UITableViewCell()
+    }
+}
+
+extension LiveNewsViewController: UITableViewDelegate {
 }
 
 extension LiveNewsViewController: PresenterToViewProtocol {
 
-	func showNews(news: LiveNewsModel) {
-        authorLabel.text = news.author
-        titleLabel.text = news.title
-        descriptionLabel.text = news.description
+	func showNews(news: [LiveNewsModel]) {
+        self.news = news
+        tableView.reloadData()
     }
     
     func showError() {

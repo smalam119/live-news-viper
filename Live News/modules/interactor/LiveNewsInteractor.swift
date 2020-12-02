@@ -20,10 +20,10 @@ class LiveNewsInteractor: PresentorToInteractorProtocol {
                 do {
                     let decoder = JSONDecoder()
                     let newsResponse = try decoder.decode(NewsResponse.self, from: data)
-                    guard let firstArticle = newsResponse.articles?[0] else {
+                    guard let articles = newsResponse.articles else {
                         return
                     }
-                    self.presenter?.liveNewsFetched(news: firstArticle)
+                    self.presenter?.liveNewsFetched(news: articles)
                 } catch let error {
                     print(error)
                 }

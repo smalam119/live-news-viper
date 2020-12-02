@@ -21,7 +21,7 @@ class LiveNewsPresenter: ViewToPresenterProtocol {
 
 extension LiveNewsPresenter: InteractorToPresenterProtocol {
 	
-	func liveNewsFetched(news: LiveNewsModel) {
+	func liveNewsFetched(news: [LiveNewsModel]) {
         view?.showNews(news: news)
     }
     

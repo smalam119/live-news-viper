@@ -10,12 +10,12 @@ import Foundation
 import UIKit
 
 protocol PresenterToViewProtocol: class {
-    func showNews(news: LiveNewsModel)
+    func showNews(news: [LiveNewsModel])
     func showError()
 }
 
 protocol InteractorToPresenterProtocol: class {
-    func liveNewsFetched(news: LiveNewsModel)
+    func liveNewsFetched(news: [LiveNewsModel])
     func liveNewsFetchedFailed()
 }
 

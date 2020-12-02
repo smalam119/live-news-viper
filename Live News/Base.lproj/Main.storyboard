@@ -1,77 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
     </dependencies>
-    <scenes>
-        <!--Live News View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController storyboardIdentifier="LiveNewsViewController" id="BYZ-38-t0r" customClass="LiveNewsViewController" customModule="Live_News" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="....." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="ggb-Fc-gLC">
-                                <rect key="frame" x="66" y="251" width="243" height="222"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="222" id="eRe-3K-ViT"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="....." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zna-v3-G6K">
-                                <rect key="frame" x="66" y="220" width="243" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="23" id="8di-GB-rdc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="....." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YR5-1P-23M">
-                                <rect key="frame" x="66" y="193" width="243" height="19"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="19" id="NGW-nG-eyW"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="YR5-1P-23M" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="173" id="2fX-bf-1Us"/>
-                            <constraint firstItem="ggb-Fc-gLC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="6FG-iY-0oR"/>
-                            <constraint firstItem="YR5-1P-23M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="Ipl-Rd-Pbq"/>
-                            <constraint firstItem="Zna-v3-G6K" firstAttribute="top" secondItem="YR5-1P-23M" secondAttribute="bottom" constant="8" id="K3R-hk-vH1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="YR5-1P-23M" secondAttribute="trailing" constant="50" id="c0i-V8-nmk"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ggb-Fc-gLC" secondAttribute="trailing" constant="50" id="eOE-R4-H1S"/>
-                            <constraint firstItem="Zna-v3-G6K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="jDc-i9-usz"/>
-                            <constraint firstItem="ggb-Fc-gLC" firstAttribute="top" secondItem="Zna-v3-G6K" secondAttribute="bottom" constant="8" id="jnu-GL-Uuo"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Zna-v3-G6K" secondAttribute="trailing" constant="50" id="lnW-1q-xF9"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="authorLabel" destination="Zna-v3-G6K" id="xrJ-d3-fxL"/>
-                        <outlet property="descriptionLabel" destination="ggb-Fc-gLC" id="0Pi-e7-Fo7"/>
-                        <outlet property="titleLabel" destination="YR5-1P-23M" id="6uY-oZ-ACp"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
-        </scene>
-    </scenes>
+    <scenes/>
 </document>

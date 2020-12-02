@@ -12,19 +12,19 @@ import UIKit
 class LiveNewsRouter: PresenterToRouterProtocol{
     
     class func createModule() -> UIViewController {
-        let view = mainstoryboard.instantiateViewController(withIdentifier: "LiveNewsViewController") as? LiveNewsViewController
         
+        let view = LiveNewsViewController()
         let presenter: ViewToPresenterProtocol & InteractorToPresenterProtocol = LiveNewsPresenter()
         let interactor: PresentorToInteractorProtocol = LiveNewsInteractor()
         let router: PresenterToRouterProtocol = LiveNewsRouter()
         
-        view?.presenter = presenter
+        view.presenter = presenter
         presenter.view = view
         presenter.router = router
         presenter.interactor = interactor
         interactor.presenter = presenter
         
-        return view ?? UIViewController()
+        return view
     }
     
     static var mainstoryboard: UIStoryboard {
