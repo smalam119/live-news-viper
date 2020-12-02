@@ -77,13 +77,12 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		35972664212C918100F3367A /* interactor */ = {
+		35972664212C918100F3367A /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
 				35972665212C918100F3367A /* LiveNewsInteractor.swift */,
 			);
-			name = interactor;
-			path = modules/interactor;
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		8043F7391E3C679A009BA6E1 = {
@@ -107,7 +106,7 @@
 		8043F7441E3C679C009BA6E1 /* Live News */ = {
 			isa = PBXGroup;
 			children = (
-				8043F7571E3C68A4009BA6E1 /* modules */,
+				8043F7571E3C68A4009BA6E1 /* Modules */,
 				8043F7451E3C679C009BA6E1 /* AppDelegate.swift */,
 				8043F7491E3C679C009BA6E1 /* Main.storyboard */,
 				8043F74C1E3C679C009BA6E1 /* Assets.xcassets */,
@@ -118,59 +117,54 @@
 			path = "Live News";
 			sourceTree = "<group>";
 		};
-		8043F7571E3C68A4009BA6E1 /* modules */ = {
+		8043F7571E3C68A4009BA6E1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				80CD31CB1E45044300DFEA17 /* protocols */,
-				8043F75C1E3C6918009BA6E1 /* route */,
-				8043F75B1E3C690E009BA6E1 /* entity */,
-				35972664212C918100F3367A /* interactor */,
-				8043F7591E3C68E2009BA6E1 /* presenter */,
-				8043F7581E3C68D0009BA6E1 /* view */,
+				CEEDFED42577F92D00343E86 /* LiveNewsList */,
 			);
-			name = modules;
+			name = Modules;
 			sourceTree = "<group>";
 		};
-		8043F7581E3C68D0009BA6E1 /* view */ = {
+		8043F7581E3C68D0009BA6E1 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				CE4AAE8E2577E47A004770F9 /* Cells */,
 				CE4AAE8D2577E46B004770F9 /* ViewController */,
 			);
-			name = view;
+			name = View;
 			sourceTree = "<group>";
 		};
-		8043F7591E3C68E2009BA6E1 /* presenter */ = {
+		8043F7591E3C68E2009BA6E1 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
 				8043F7621E3C6FA9009BA6E1 /* LiveNewsPresenter.swift */,
 			);
-			name = presenter;
+			name = Presenter;
 			sourceTree = "<group>";
 		};
-		8043F75B1E3C690E009BA6E1 /* entity */ = {
+		8043F75B1E3C690E009BA6E1 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
 				74135E62236C2823000EC377 /* LiveNewsModel.swift */,
 				74135E64236C29BA000EC377 /* NewsResponse.swift */,
 			);
-			name = entity;
+			name = Entity;
 			sourceTree = "<group>";
 		};
-		8043F75C1E3C6918009BA6E1 /* route */ = {
+		8043F75C1E3C6918009BA6E1 /* Route */ = {
 			isa = PBXGroup;
 			children = (
 				BD07EE5B2111A88900950254 /* LiveNewsRouter.swift */,
 			);
-			name = route;
+			name = Route;
 			sourceTree = "<group>";
 		};
-		80CD31CB1E45044300DFEA17 /* protocols */ = {
+		80CD31CB1E45044300DFEA17 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				80CD31C91E4503FB00DFEA17 /* LiveNewsProtocols.swift */,
 			);
-			name = protocols;
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 		CE4AAE8D2577E46B004770F9 /* ViewController */ = {
@@ -189,6 +183,19 @@
 				CE4AAE902577E4CC004770F9 /* LiveNewsTableViewCell.xib */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		CEEDFED42577F92D00343E86 /* LiveNewsList */ = {
+			isa = PBXGroup;
+			children = (
+				8043F7581E3C68D0009BA6E1 /* View */,
+				35972664212C918100F3367A /* Interactor */,
+				8043F7591E3C68E2009BA6E1 /* Presenter */,
+				8043F75B1E3C690E009BA6E1 /* Entity */,
+				8043F75C1E3C6918009BA6E1 /* Route */,
+				80CD31CB1E45044300DFEA17 /* Protocols */,
+			);
+			name = LiveNewsList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
