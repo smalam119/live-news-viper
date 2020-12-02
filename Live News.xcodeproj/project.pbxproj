@@ -98,6 +98,7 @@
 		8043F7441E3C679C009BA6E1 /* Live News */ = {
 			isa = PBXGroup;
 			children = (
+				CEBD3B5B2577FBFC005EBC4F /* SupportingFiles */,
 				8043F7571E3C68A4009BA6E1 /* Modules */,
 				8043F7491E3C679C009BA6E1 /* Main.storyboard */,
 				8043F74C1E3C679C009BA6E1 /* Assets.xcassets */,
@@ -110,7 +111,6 @@
 		8043F7571E3C68A4009BA6E1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				CEBD3B5B2577FBFC005EBC4F /* SupportingFiles */,
 				CEEDFED42577F92D00343E86 /* LiveNewsList */,
 			);
 			name = Modules;
