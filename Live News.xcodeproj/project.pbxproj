@@ -7,45 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35972666212C918100F3367A /* LiveNewsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35972665212C918100F3367A /* LiveNewsInteractor.swift */; };
-		74135E63236C2823000EC377 /* LiveNewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74135E62236C2823000EC377 /* LiveNewsModel.swift */; };
-		74135E65236C29BA000EC377 /* NewsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74135E64236C29BA000EC377 /* NewsResponse.swift */; };
-		8043F7461E3C679C009BA6E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043F7451E3C679C009BA6E1 /* AppDelegate.swift */; };
 		8043F74B1E3C679C009BA6E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8043F7491E3C679C009BA6E1 /* Main.storyboard */; };
 		8043F74D1E3C679C009BA6E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8043F74C1E3C679C009BA6E1 /* Assets.xcassets */; };
 		8043F7501E3C679C009BA6E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8043F74E1E3C679C009BA6E1 /* LaunchScreen.storyboard */; };
-		8043F75E1E3C6A4A009BA6E1 /* LiveNewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043F75D1E3C6A4A009BA6E1 /* LiveNewsListViewController.swift */; };
 		8043F7631E3C6FA9009BA6E1 /* LiveNewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043F7621E3C6FA9009BA6E1 /* LiveNewsPresenter.swift */; };
-		8043F7731E3C909B009BA6E1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043F7721E3C909B009BA6E1 /* Constants.swift */; };
 		80CD31CA1E4503FC00DFEA17 /* LiveNewsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CD31C91E4503FB00DFEA17 /* LiveNewsProtocols.swift */; };
 		8EF7789E23A8EF9C1847DE46 /* Pods_Live_News.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983BF5BF882D13713EB064C5 /* Pods_Live_News.framework */; };
 		BD07EE5C2111A88900950254 /* LiveNewsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD07EE5B2111A88900950254 /* LiveNewsRouter.swift */; };
-		CE4AAE8B2577E1A8004770F9 /* LiveNewsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4AAE8A2577E1A8004770F9 /* LiveNewsListViewController.xib */; };
-		CE4AAE912577E4CC004770F9 /* LiveNewsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AAE8F2577E4CC004770F9 /* LiveNewsListTableViewCell.swift */; };
-		CE4AAE922577E4CC004770F9 /* LiveNewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4AAE902577E4CC004770F9 /* LiveNewsTableViewCell.xib */; };
+		CE2C0DEE2577FB3000C920C9 /* LiveNewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C0DEC2577FB3000C920C9 /* LiveNewsModel.swift */; };
+		CE2C0DEF2577FB3000C920C9 /* NewsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C0DED2577FB3000C920C9 /* NewsResponse.swift */; };
+		CE2C0DF32577FB4700C920C9 /* LiveNewsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C0DF12577FB4700C920C9 /* LiveNewsListTableViewCell.swift */; };
+		CE2C0DF42577FB4700C920C9 /* LiveNewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2C0DF22577FB4700C920C9 /* LiveNewsTableViewCell.xib */; };
+		CE2C0DF82577FB5A00C920C9 /* LiveNewsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2C0DF62577FB5A00C920C9 /* LiveNewsListViewController.xib */; };
+		CE2C0DF92577FB5A00C920C9 /* LiveNewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C0DF72577FB5A00C920C9 /* LiveNewsListViewController.swift */; };
+		CE2C0DFE2577FBA900C920C9 /* LiveNewsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C0DFD2577FBA900C920C9 /* LiveNewsInteractor.swift */; };
+		CE488CD52577FCD4003CD513 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE488CD32577FCD4003CD513 /* Constants.swift */; };
+		CE488CD62577FCD4003CD513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE488CD42577FCD4003CD513 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		35972665212C918100F3367A /* LiveNewsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveNewsInteractor.swift; sourceTree = "<group>"; };
-		74135E62236C2823000EC377 /* LiveNewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveNewsModel.swift; sourceTree = "<group>"; };
-		74135E64236C29BA000EC377 /* NewsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsResponse.swift; sourceTree = "<group>"; };
 		8043F7421E3C679C009BA6E1 /* Live News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Live News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8043F7451E3C679C009BA6E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8043F74A1E3C679C009BA6E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8043F74C1E3C679C009BA6E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8043F74F1E3C679C009BA6E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8043F7511E3C679C009BA6E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8043F75D1E3C6A4A009BA6E1 /* LiveNewsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiveNewsListViewController.swift; path = modules/view/LiveNewsListViewController.swift; sourceTree = "<group>"; };
 		8043F7621E3C6FA9009BA6E1 /* LiveNewsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiveNewsPresenter.swift; path = modules/presenter/LiveNewsPresenter.swift; sourceTree = "<group>"; };
-		8043F7721E3C909B009BA6E1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		80CD31C91E4503FB00DFEA17 /* LiveNewsProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiveNewsProtocols.swift; path = modules/protocols/LiveNewsProtocols.swift; sourceTree = "<group>"; };
 		983BF5BF882D13713EB064C5 /* Pods_Live_News.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Live_News.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23CFDB29DEAF97B3F73DFBD /* Pods-Live News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Live News.release.xcconfig"; path = "Pods/Target Support Files/Pods-Live News/Pods-Live News.release.xcconfig"; sourceTree = "<group>"; };
 		BD07EE5B2111A88900950254 /* LiveNewsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiveNewsRouter.swift; path = modules/route/LiveNewsRouter.swift; sourceTree = "<group>"; };
 		C456990C6F6128618D084D05 /* Pods-Live News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Live News.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Live News/Pods-Live News.debug.xcconfig"; sourceTree = "<group>"; };
-		CE4AAE8A2577E1A8004770F9 /* LiveNewsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveNewsListViewController.xib; sourceTree = "<group>"; };
-		CE4AAE8F2577E4CC004770F9 /* LiveNewsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveNewsListTableViewCell.swift; sourceTree = "<group>"; };
-		CE4AAE902577E4CC004770F9 /* LiveNewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveNewsTableViewCell.xib; sourceTree = "<group>"; };
+		CE2C0DEC2577FB3000C920C9 /* LiveNewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiveNewsModel.swift; path = Modules/Entity/LiveNewsModel.swift; sourceTree = "<group>"; };
+		CE2C0DED2577FB3000C920C9 /* NewsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsResponse.swift; path = Modules/Entity/NewsResponse.swift; sourceTree = "<group>"; };
+		CE2C0DF12577FB4700C920C9 /* LiveNewsListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiveNewsListTableViewCell.swift; path = Modules/View/Cells/LiveNewsListTableViewCell.swift; sourceTree = "<group>"; };
+		CE2C0DF22577FB4700C920C9 /* LiveNewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LiveNewsTableViewCell.xib; path = Modules/View/Cells/LiveNewsTableViewCell.xib; sourceTree = "<group>"; };
+		CE2C0DF62577FB5A00C920C9 /* LiveNewsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LiveNewsListViewController.xib; path = Modules/View/ViewControllers/LiveNewsListViewController.xib; sourceTree = "<group>"; };
+		CE2C0DF72577FB5A00C920C9 /* LiveNewsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiveNewsListViewController.swift; path = Modules/View/ViewControllers/LiveNewsListViewController.swift; sourceTree = "<group>"; };
+		CE2C0DFD2577FBA900C920C9 /* LiveNewsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveNewsInteractor.swift; sourceTree = "<group>"; };
+		CE488CD32577FCD4003CD513 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = SupportingFiles/Constants.swift; sourceTree = "<group>"; };
+		CE488CD42577FCD4003CD513 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SupportingFiles/AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,14 +77,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		35972664212C918100F3367A /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				35972665212C918100F3367A /* LiveNewsInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
 		8043F7391E3C679A009BA6E1 = {
 			isa = PBXGroup;
 			children = (
@@ -107,12 +99,10 @@
 			isa = PBXGroup;
 			children = (
 				8043F7571E3C68A4009BA6E1 /* Modules */,
-				8043F7451E3C679C009BA6E1 /* AppDelegate.swift */,
 				8043F7491E3C679C009BA6E1 /* Main.storyboard */,
 				8043F74C1E3C679C009BA6E1 /* Assets.xcassets */,
 				8043F74E1E3C679C009BA6E1 /* LaunchScreen.storyboard */,
 				8043F7511E3C679C009BA6E1 /* Info.plist */,
-				8043F7721E3C909B009BA6E1 /* Constants.swift */,
 			);
 			path = "Live News";
 			sourceTree = "<group>";
@@ -120,6 +110,7 @@
 		8043F7571E3C68A4009BA6E1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CEBD3B5B2577FBFC005EBC4F /* SupportingFiles */,
 				CEEDFED42577F92D00343E86 /* LiveNewsList */,
 			);
 			name = Modules;
@@ -145,8 +136,8 @@
 		8043F75B1E3C690E009BA6E1 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				74135E62236C2823000EC377 /* LiveNewsModel.swift */,
-				74135E64236C29BA000EC377 /* NewsResponse.swift */,
+				CE2C0DEC2577FB3000C920C9 /* LiveNewsModel.swift */,
+				CE2C0DED2577FB3000C920C9 /* NewsResponse.swift */,
 			);
 			name = Entity;
 			sourceTree = "<group>";
@@ -167,11 +158,20 @@
 			name = Protocols;
 			sourceTree = "<group>";
 		};
+		CE2C0DFC2577FBA900C920C9 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CE2C0DFD2577FBA900C920C9 /* LiveNewsInteractor.swift */,
+			);
+			name = Interactor;
+			path = Modules/Interactor;
+			sourceTree = "<group>";
+		};
 		CE4AAE8D2577E46B004770F9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				8043F75D1E3C6A4A009BA6E1 /* LiveNewsListViewController.swift */,
-				CE4AAE8A2577E1A8004770F9 /* LiveNewsListViewController.xib */,
+				CE2C0DF72577FB5A00C920C9 /* LiveNewsListViewController.swift */,
+				CE2C0DF62577FB5A00C920C9 /* LiveNewsListViewController.xib */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -179,17 +179,26 @@
 		CE4AAE8E2577E47A004770F9 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				CE4AAE8F2577E4CC004770F9 /* LiveNewsListTableViewCell.swift */,
-				CE4AAE902577E4CC004770F9 /* LiveNewsTableViewCell.xib */,
+				CE2C0DF12577FB4700C920C9 /* LiveNewsListTableViewCell.swift */,
+				CE2C0DF22577FB4700C920C9 /* LiveNewsTableViewCell.xib */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		CEBD3B5B2577FBFC005EBC4F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CE488CD42577FCD4003CD513 /* AppDelegate.swift */,
+				CE488CD32577FCD4003CD513 /* Constants.swift */,
+			);
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		CEEDFED42577F92D00343E86 /* LiveNewsList */ = {
 			isa = PBXGroup;
 			children = (
 				8043F7581E3C68D0009BA6E1 /* View */,
-				35972664212C918100F3367A /* Interactor */,
+				CE2C0DFC2577FBA900C920C9 /* Interactor */,
 				8043F7591E3C68E2009BA6E1 /* Presenter */,
 				8043F75B1E3C690E009BA6E1 /* Entity */,
 				8043F75C1E3C6918009BA6E1 /* Route */,
@@ -260,11 +269,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE4AAE922577E4CC004770F9 /* LiveNewsTableViewCell.xib in Resources */,
+				CE2C0DF82577FB5A00C920C9 /* LiveNewsListViewController.xib in Resources */,
+				CE2C0DF42577FB4700C920C9 /* LiveNewsTableViewCell.xib in Resources */,
 				8043F7501E3C679C009BA6E1 /* LaunchScreen.storyboard in Resources */,
 				8043F74D1E3C679C009BA6E1 /* Assets.xcassets in Resources */,
 				8043F74B1E3C679C009BA6E1 /* Main.storyboard in Resources */,
-				CE4AAE8B2577E1A8004770F9 /* LiveNewsListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,15 +324,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				80CD31CA1E4503FC00DFEA17 /* LiveNewsProtocols.swift in Sources */,
-				74135E65236C29BA000EC377 /* NewsResponse.swift in Sources */,
-				CE4AAE912577E4CC004770F9 /* LiveNewsListTableViewCell.swift in Sources */,
-				74135E63236C2823000EC377 /* LiveNewsModel.swift in Sources */,
-				8043F7731E3C909B009BA6E1 /* Constants.swift in Sources */,
-				8043F75E1E3C6A4A009BA6E1 /* LiveNewsListViewController.swift in Sources */,
-				35972666212C918100F3367A /* LiveNewsInteractor.swift in Sources */,
+				CE2C0DFE2577FBA900C920C9 /* LiveNewsInteractor.swift in Sources */,
+				CE2C0DEF2577FB3000C920C9 /* NewsResponse.swift in Sources */,
+				CE2C0DEE2577FB3000C920C9 /* LiveNewsModel.swift in Sources */,
+				CE2C0DF32577FB4700C920C9 /* LiveNewsListTableViewCell.swift in Sources */,
 				8043F7631E3C6FA9009BA6E1 /* LiveNewsPresenter.swift in Sources */,
 				BD07EE5C2111A88900950254 /* LiveNewsRouter.swift in Sources */,
-				8043F7461E3C679C009BA6E1 /* AppDelegate.swift in Sources */,
+				CE2C0DF92577FB5A00C920C9 /* LiveNewsListViewController.swift in Sources */,
+				CE488CD62577FCD4003CD513 /* AppDelegate.swift in Sources */,
+				CE488CD52577FCD4003CD513 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
