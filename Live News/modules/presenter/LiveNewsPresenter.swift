@@ -19,13 +19,21 @@ class LiveNewsPresenter: LiveNewsListViewToPresenterProtocol {
     func updateView() {
         interactor?.fetchLiveNews()
     }
+    
+    func getNewsListCount() -> Int? {
+        return interactor?.news?.count
+    }
+    
+    func getNews(index: Int) -> LiveNewsModel? {
+        return interactor?.news?[index]
+    }
 }
 
 // MARK: - LiveNewsListInteractorToPresenterProtocol
 extension LiveNewsPresenter: LiveNewsListInteractorToPresenterProtocol {
 	
-	func liveNewsFetched(news: [LiveNewsModel]) {
-        view?.showNews(news: news)
+	func liveNewsFetched() {
+        view?.showNews()
     }
     
     func liveNewsFetchedFailed() {

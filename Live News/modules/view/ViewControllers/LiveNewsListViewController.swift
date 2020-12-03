@@ -16,7 +16,6 @@ class LiveNewsListViewController: UIViewController {
     
     // MARK: - Properties
     var presenter: LiveNewsListViewToPresenterProtocol?
-    var news = [LiveNewsModel]()
     
     // MARK: - Methods
     
@@ -40,14 +39,14 @@ class LiveNewsListViewController: UIViewController {
 // MARK: - UITableViewDataSource
 extension LiveNewsListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return news.count
+        return presenter?.getNewsListCount() ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LiveNewsTableViewCell", for: indexPath) as? LiveNewsListTableViewCell
         let row = indexPath.row
-        let news = self.news[row]
-        guard let title = news.title, let author = news.author, let description = news.description else {
+        let news = presenter?.getNews(index: row)
+        guard let title = news?.title, let author = news?.author, let description = news?.description else {
             return cell ?? UITableViewCell()
         }
         cell?.setCell(title: title, author: author, description: description)
@@ -61,8 +60,7 @@ extension LiveNewsListViewController: UITableViewDelegate {}
 // MARK: - LiveNewsListPresenterToViewProtocol
 extension LiveNewsListViewController: LiveNewsListPresenterToViewProtocol {
 
-	func showNews(news: [LiveNewsModel]) {
-        self.news = news
+	func showNews() {
         tableView.reloadData()
     }
     

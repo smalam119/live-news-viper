@@ -13,6 +13,7 @@ class LiveNewsInteractor: LiveNewsListPresentorToInteractorProtocol {
 
     // MARK: - Properties
     weak var presenter: LiveNewsListInteractorToPresenterProtocol?
+    var news: [LiveNewsModel]?
     
     // MARK: - Methods
     func fetchLiveNews() {
@@ -22,10 +23,9 @@ class LiveNewsInteractor: LiveNewsListPresentorToInteractorProtocol {
                 do {
                     let decoder = JSONDecoder()
                     let newsResponse = try decoder.decode(NewsResponse.self, from: data)
-                    guard let articles = newsResponse.articles else {
-                        return
-                    }
-                    self.presenter?.liveNewsFetched(news: articles)
+                    guard let articles = newsResponse.articles else { return }
+                    self.news = articles
+                    self.presenter?.liveNewsFetched()
                 } catch let error {
                     print(error)
                 }
